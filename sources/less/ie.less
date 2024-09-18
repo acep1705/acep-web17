@@ -1,0 +1,35 @@
+header{
+    .headerBg, .headerShadow{
+        .reset-filter();
+        display: none;
+    }
+    &.pages{
+        .headerBg, .headerShadow{	
+        	display: block;
+        }
+    }
+}
+.soc_icons>li>a{
+	span:first-child+span{
+		.reset-filter();
+        display: none;
+	}
+	&:hover{
+	    span{
+	        &:first-child{
+	            display: none;
+	            &+span{
+	                display: block;
+	            }
+	        }
+	    }
+	}
+}
+.sitem_over{
+	display: none;
+}
+a:hover .sitem_over{
+	display: block;
+}
+@import "variables.less";
+@import "mixins.less";
