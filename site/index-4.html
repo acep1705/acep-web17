@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Contacts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+ 	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/preview.css">
+	<script src="js/include_script.js"></script>
+  	<!--[if lt IE 9]>
+	   	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <link href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+</head>
+<body>
+<!--content wrapper-->
+	<div id="wrapper">
+		<section class="container">
+			<div class="dynamicContent">
+				<!--content-->
+                <div class="inner">
+                    <div class="row">
+                        <div class="span6">
+                        	<h2>find<span>us</span></h2>
+							<div class="g_map img-polaroid"><iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe></div>
+							<address>8901 Marmora Road, <br>
+Glasgow, D04 89GR.</address>
+							<address><span class="width1">Freephone:</span>+1 800 559 6580 <br>
+<span class="width1">Telephone: </span>+1 959 603 6035 <br>
+<span class="width1">FAX:</span>+1 504 889 9898 <br>
+E-mail: <a href="#">mail@demolink.org</a></address>
+							<div class="clearfix"></div>
+                        </div>
+                        <div class="span6">
+                        	<h2>get<span>in touch</span></h2>
+							<form id="form1">
+                              <div class="success-message"> Contact form submitted! We will be in touch soon.</div>
+                                    <label class="name">
+                                      <input type="text" placeholder="Name:" data-constraints="@Required @Pattern(regex=/^[a-zA-Z'][a-zA-Z-' ]+[a-zA-Z']?$/)"/>
+                                      <span class="error">*Field not valid or empty</span>
+                                    </label>
+                                    <label class="email">
+                                      <input type="email" placeholder="Email:" data-constraints="@Required @Email"/>
+                                      <span class="error">*Field not valid or empty</span>
+                                    </label>
+                                    <label class="message">
+                                      <textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                      <span class="error">*Field not valid or empty</span>
+                                    </label>
+                                <div class="clearfix"></div>
+                                <div class="btns"><p><a href="#" class="btn btn-link" data-type="submit">submit</a><a href="#" class="btn btn-link" data-type="reset">clear</a></p></div>
+                            </form>
+                    	</div>
+                    </div>
+                </div>
+			</div>
+		</section>
+	</div>
+	<script src="js/bootstrap.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('#form1').TMForm({
+	            ownerEmail:'#'
+	        });
+		});
+	</script>
+</body>
+</html>
